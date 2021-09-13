@@ -1,0 +1,100 @@
+.property-locations {
+  padding: 50px 0;
+  .container {
+    .row {
+      .col {
+        &-heading {
+          @include sectionHeading();
+        }
+        .figure {
+          position: relative;
+          box-shadow: 0px 0px 20px 0px #00000050;
+          min-width: 330px;
+          margin: 20px 10px;
+          max-height: 230px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            position: relative;
+          }
+          .details {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            background: linear-gradient(180deg,#323837ba,rgba(125, 88, 28, 0.3));
+            background: linear-gradient(180deg,#323837ba,rgba(0, 0, 0, 0.3));
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+            &:hover {
+              background: linear-gradient(245deg,#32383741,rgba(255, 196, 0, 0.6));
+              display: block;
+              background-color: rgba(26,29,31,0.50);
+              transition: all 700ms ease;
+            }
+            .title {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.7rem;
+                font-family: $pacifico;
+                text-shadow: 2px 2px 5px #000000c4;
+              }
+            }
+            .listings {
+              position: absolute;
+              bottom: 20px;
+              left: 20px;
+              span {
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 10px 18px;
+                font-size: 0.9rem;
+                font-family: $roboto;
+                font-style: italic;
+                border-radius: 20px 20px;
+                color: #fff;
+              }
+            }
+            .map-marker {
+              position: absolute;
+              bottom: 15px;
+              font-family: $pacifico;
+              right: 20px;
+              a {
+                text-decoration: none;
+                color: $color-10;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .property-locations {
+    .container {
+      max-width: 500px;
+      padding: 0 20px;
+      .row {
+        .col {
+          flex: 1;
+          &-heading {
+            @include sectionHeading();
+          }
+          .figure {
+            text-align: center;
+            min-width: 250px;
+            max-height: 200px;
+            margin: 10px 5px;
+          }
+        }
+      }
+    }
+  }
+}

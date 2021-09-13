@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #000;
+  overflow-x: hidden;
+  font-family: $raleway;
+  background-color: $color-1;
+}
+
+.navbar {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.col-heading {
+  @include sectionHeading();
+}

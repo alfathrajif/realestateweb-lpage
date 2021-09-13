@@ -1,0 +1,52 @@
+.featured {
+  .container {
+    .row {
+      .col {
+        .property-container {
+          .property-content {
+            h3 {
+              a {
+                font-size: 1.2rem;
+              }
+            }
+          }
+          p {
+            margin: 0 27px 18px;
+            font-size: 0.9rem;
+            text-align: justify;
+            color: $color-7;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+          .property-attributes {
+            ul {
+              li {
+                .amount {
+                  display: flex;
+                  font-size: 1.5rem;
+                  margin-bottom: 5px;
+                  span {
+                    margin-left: 10px;
+                    font-size: 1.8rem;
+                  }
+                }
+                span {
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+          .property-buttons {
+            a.btn {
+              font-size: 1rem;
+              padding: 11px 23px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

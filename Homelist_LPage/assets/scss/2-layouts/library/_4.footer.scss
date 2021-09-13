@@ -1,0 +1,138 @@
+.footer {
+  background-color: $color-2;
+  .container {
+    padding-bottom: 20px;
+    .row {
+        padding: 60px 0 30px;
+        border-bottom: 1px solid $color-4;
+      .col {
+        margin: 20px;
+        .footer-widget {
+          min-width: 280px;
+          h1 {
+            font-size: 2rem;
+            color: $color-10;
+            font-weight: 600;
+            margin-bottom: 15px;
+          }
+          .widget-text {
+            font-size: 1rem;
+            font-family: $roboto;
+            font-weight: 300;
+            color: $color-8;
+            b {
+              font-weight: 500;
+              color: $color-9;
+            }
+          }
+          ul {
+            margin-top: 25px;
+            li {
+              margin: 0 7px;
+              a {
+                display: flex;
+                color: $color-8;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid $color-10;
+                &:hover {
+                  background-color: $color-10;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+        .navbar-nav {
+          min-width: 200px;
+          margin-bottom: 30px;
+          h2 {
+            margin-bottom: 20px;
+            color: $color-9;
+          }
+          ul {
+            flex-direction: column;
+            li {
+              margin: 6px 0;
+              a {
+                color: $color-7;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+                &:hover {
+                  color: $color-10;
+                }
+                ion-icon {
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .row-copyright {
+      padding: 0;
+      border: 0;
+      color: $color-6;
+      margin: 20px 0;
+      .text-copyright {
+        font-size: 0.9rem;
+        font-family: $roboto;
+        font-weight: 300;
+      }
+      .widget--btn-up {
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-10;
+        &:hover {
+          background-color: $color-9;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+        i {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    .container {
+      .row {
+        .col {
+          text-align: center;
+          margin: 10px 0;
+          .footer-widget {
+            ul {
+              justify-content: center;
+            }
+          }
+          .navbar-nav {
+            ul {
+              li {
+                a {
+                  justify-content: center;
+                  ion-icon {
+                    display: none
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.customer-service {
+  background-color: $color-1;
+  .container {
+    .row {
+      margin: 50px 0 20px;
+      .col {
+        text-align: center;
+        &-heading {
+          @include sectionHeading();
+        }
+        .figure {
+          margin-top: 20px;
+          min-width: 250px;
+          a {
+            text-decoration: none;
+            img {
+              width: 110px;
+              border-radius: 50%;
+              border: 5px solid transparent;
+              transition: all 0.3s ease;
+              &:hover {
+                border: 5px solid $color-3;
+              }
+            }
+          }
+          figcaption {
+            margin: 20px 0;
+            h3 {
+              font-size: 1.3rem;
+              color: $color-8;
+            }
+            p {
+              margin: 10px 0;
+              font-size: 0.9rem;
+              font-weight: 500;
+              line-height: 1.7;
+              color: $color-6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .customer-service {
+    .container {
+      max-width: 500px;
+      padding: 0 20px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@mixin sectionHeading {
+  flex: none;
+  text-align: center;
+  h2 {
+    font-family: $playfairDisplay;
+    font-size: 2.3rem;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: $color-7;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 1rem;
+    color: $color-6;
+  }
+}
